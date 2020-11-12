@@ -21,6 +21,7 @@ public class MetierImpl implements ImetierCatalogue {
                 p.setIdProduit(rs.getLong("ID_PRODUIT"));
                 p.setNomProduit(rs.getString("NOM_PRODUIT"));
                 p.setPrix(rs.getDouble("PRIX"));
+                p.setQuantite(rs.getInt("quantite"));
                 prods.add(p);
             }
         } catch (SQLException e) {

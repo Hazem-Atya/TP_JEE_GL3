@@ -5,6 +5,16 @@ public class Produit implements Serializable{
     private Long idProduit;
     private String nomProduit;
     private double prix;
+    private int quantite ;
+
+    public int getQuantite() {
+        return quantite;
+    }
+
+    public void setQuantite(int quantite) {
+        this.quantite = quantite;
+    }
+
     public Produit() {
         super();
     }

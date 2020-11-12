@@ -15,13 +15,14 @@
 </form>
 <table border="1" width="80%">
     <tr>
-        <th>ID</th> <th>Nom</th> <th>Prix</th>
+        <th>ID</th> <th>Nom</th> <th>Prix</th><th>Quantité</th>
     </tr>
     <c:forEach items="${modele.produits}" var="p">
         <tr>
             <td>${p.idProduit}</td>
             <td>${p.nomProduit}</td>
             <td>${p.prix}</td>
+            <td>${p.quantite}</td>
         </tr>
     </c:forEach>
 </table>

@@ -26,6 +26,8 @@ public class ControleurServlet extends HttpServlet {
         ProduitModele mod = new ProduitModele();
         mod.setMotCle(mc);
         List<Produit> prods = metier.getProduitsParMotCle(mc);
+        for (Produit p : prods)
+            System.out.println(p.getNomProduit());
         mod.setProduits(prods);
         request.setAttribute("modele", mod);
         request.getRequestDispatcher("ProduitsView.jsp").forward(request,response);
